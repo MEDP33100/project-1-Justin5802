@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section {
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  /* Rocket Animation */
+  .rocket {
+    width: 100px;
+    height: 200px;
+    background: url('assets/rocket.png') no-repeat center center;
+    background-size: contain;
+    margin: 50px auto;
+    animation: launch 5s linear forwards;
+  }
+  
+  @keyframes launch {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-1000px); }
+  }
+  
+  /* Spacecraft Animation */
+  .spacecraft {
+    width: 150px;
+    height: 150px;
+    background: url('assets/spacecraft.webp') no-repeat center center;
+    background-size: contain;
+    margin: 50px auto;
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  /* Lunar Module Animation */
+  .lunar-module {
+    width: 100px;
+    height: 100px;
+    background: url('assets/lunar-module.png') no-repeat center center;
+    background-size: contain;
+    margin: 50px auto;
+    animation: land 3s ease-out forwards;
+  }
+  
+  @keyframes land {
+    0% { transform: translateY(-500px); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* Astronaut Animation */
+  .astronaut {
+    width: 100px;
+    height: 150px;
+    background: url('assets/astronaut.png') no-repeat center center;
+    background-size: contain;
+    margin: 50px auto;
+    animation: walk 2s infinite;
+  }
+  
+  @keyframes walk {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+  }
+  
+  /* Earth Animation */
+  .earth {
+    width: 200px;
+    height: 200px;
+    background: url('assets/earth.png') no-repeat center center;
+    background-size: contain;
+    margin: 50px auto;
+    animation: spin 10s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+  }
